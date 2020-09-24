@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="./css/esconder__visualmente.css" />
+    <title>Typing Fast</title>
+  </head>
+  <body>
+    <main>
+      <div class="conteudo">
+        <div class="container__principal">
+          <article>
+            <h1>Typing Fast</h1>
+            <div class="principal">
+              <p class="frase"></p>
+              <ul class="informações">
+                <li><span class="contador__palavras"></span> palavras</li>
+                <li class="botao__mudar">
+                  <img class="icone" src="./img/Shape.svg" alt="" /><a class="texto__mudar" href="#">mudar a frase</a>
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <textarea class="area__texto borda__normal" spellcheck="false"></textarea>
+            <div class="lista__teste__container">
+              <ul class="lista__contador">
+                <li><span class="contador__segundos">00:00</span></li>
+                <span class="at__contador__palavras esconder__visualmente"></span>
+                <li><span class="at__contador__caracteres">0</span> caracteres</li>
+                <li><span class="at__contador__frases esconder__visualmente">0</span></li>
+              </ul>
+              <ul class="lista__teste" aria-label="Quanto tempo o teste vai durar?">
+                <div class="ul__teste">
+                  <li class="1min"><button class="botao__min">1 minuto</button></li>
+                  <li class="3min"><button class="botao__min">3 minutos</button></li>
+                  <li class="5min"><button class="botao__min">5 minutos</button></li>
+                </div>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/areaDeTexto.js"></script>
+    <script src="./js/tempoJogo.js"></script>
+    <script async src="./js/Placar.js"></script>
+    <script async src="./js/cronometro.js"></script>
+    <script src="./js/frase.js"></script>
+  </body>
+</html>
